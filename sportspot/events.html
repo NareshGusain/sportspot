@@ -21,8 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-    <script src="./events.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
     <style>
         .background {
             background: transparent
@@ -176,7 +178,25 @@
         <div id="tournamentList">
         </div>
 
+
     </div>
+
+    <script>
+        const firebaseApp = firebase.initializeApp({ 
+            apiKey: "AIzaSyAC966hnK_2cIqy2EXz0649hxyKfqnS8to",
+            authDomain: "sportspot-6bc8f.firebaseapp.com",
+            databaseURL: "https://sportspot-6bc8f-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "sportspot-6bc8f",
+            storageBucket: "sportspot-6bc8f.appspot.com",
+            messagingSenderId: "857087833686",
+            appId: "1:857087833686:web:ad5ab067b66f2f6bf7edf7",
+            measurementId: "G-CDEMRF3767"
+        });
+        
+        const db = firebaseApp.firestore();
+        db.settings({ timestampsInSnapshot: true, merge: true });
+    </script>
+    <script src="./events.js"></script>
 
 </body>
 
