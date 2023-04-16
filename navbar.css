@@ -1,0 +1,64 @@
+.background {
+    background: transparent
+}
+
+.title {
+    font-size: 1.25rem;
+}
+
+.right_keys {
+    font-size: 25px;
+    margin-right: 38px;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.font_bold {
+
+    font-weight: bold;
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 25px;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 3.5rem;
+    padding-left: 0.5rem;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: gray;
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+.position {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
